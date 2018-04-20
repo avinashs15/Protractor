@@ -1,0 +1,16 @@
+Name	Value	Units	Type	Accuracy	Min	Max	Enums	Description
+								
+SystemMode	0	o	bool	1	0	1		Override flag
+SystemMode	1	e	uint8	0	0	6	"SystemNotReady, SystemInitialized, SystemStarting, SystemActive, SystemCharging,SystemQuitOnRoad,SystemPowerDown"	Override value
+SystemMode		e	uint8	1			"SystemNotReady, SystemInitialized, SystemStarting, SystemActive, SystemCharging,SystemQuitOnRoad,SystemPowerDown"	Displayable
+								
+ ** Enum defs for SystemMode								
+SystemNotReady	0	e	uint8					enum def
+SystemInitialized	1	e	uint8					enum def
+SystemStarting	2	e	uint8					enum def
+SystemActive	3	e	uint8					enum def
+SystemCharging	4	e	uint8					enum def
+SystemQuitOnRoad	5	e	uint8					enum def
+SystemPowerDown	6	e	uint8					enum def
+								
+

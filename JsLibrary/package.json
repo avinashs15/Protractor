@@ -1,0 +1,9 @@
+{
+    "name": "JsLibrary",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "a.ranganatha",
+    "contributors": [],
+    "dependencies": {},
+    "scripts": { "test": "main" }
+}

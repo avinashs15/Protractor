@@ -1,0 +1,15 @@
+Name	Value	Units	Type	Accuracy	Min	Max	Enums	Description
+								
+SSCc_o_SystemMode	0	o	bool	1	0	1		Override flag
+SSCc_e_SystemMode	1	e	uint8	0	0	6	"SSCk_e_SystemNotReady, SSCk_e_SystemInitialized, SSCk_e_SystemStarting, SSCk_e_SystemActive, SSCk_e_SystemCharging,SSCk_e_SystemQuitOnRoad,SSCk_e_SystemPowerDown"	Override value
+SSC_e_SystemMode		e	uint8	1			"SSCk_e_SystemNotReady, SSCk_e_SystemInitialized, SSCk_e_SystemStarting, SSCk_e_SystemActive, SSCk_e_SystemCharging,SSCk_e_SystemQuitOnRoad,SSCk_e_SystemPowerDown"	Displayable
+								
+ ** Enum defs for XSS_e_SystemMode								
+SSCk_e_SystemNotReady	0	e	uint8					enum def
+SSCk_e_SystemInitialized	1	e	uint8					enum def
+SSCk_e_SystemStarting	2	e	uint8					enum def
+SSCk_e_SystemActive	3	e	uint8					enum def
+SSCk_e_SystemCharging	4	e	uint8					enum def
+SSCk_e_SystemQuitOnRoad	5	e	uint8					enum def
+SSCk_e_SystemPowerDown	6	e	uint8					enum def
+								
