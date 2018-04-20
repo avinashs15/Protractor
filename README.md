@@ -12,8 +12,12 @@ Features of the framework
 2. Utilities.js has many time bond, string manipulation, random generators , csv and json utilities, browser switch tabs etc
 3. Page object model implementation : All the pages will be under ./FunctionalTests/src/tests/Pages and the spec files will be under ./FunctionalTests/src/tests/Specs
 4. Handling data : The data required is stored under ./FunctionalTests/src/tests/Data folder. All the data will be stored in the json file and it can be retrived either in test cases or in the spec files.
+5. Design pattern : page object model using data and key driven hybrid design.
 
-Executing the test caes :
+
+More on Protractor : https://www.linkedin.com/pulse/functional-test-automation-using-protractor-selenium-ranganatha/
+
+Executing the test cases :
 The execution is controlled by ./FunctionalTests/src/tests/conf.js file.
 The test cases under 	specs: ['./Specs/*.js'], // Relative path to the spec file will all be executed
 if the user wants to execute specific test cases, he can specify the spec file name under Specs/
