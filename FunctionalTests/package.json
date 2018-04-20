@@ -11,6 +11,13 @@
   "author": "a.ranganatha",
   "contributors": [],
   "dependencies": {
-    "protractor-pretty-html-reporter": "0.0.16"
+    "appendjson": "^0.1.2",
+    "csv-write-stream": "^2.0.0",
+    "fs": "0.0.1-security",
+    "generate-password": "^1.4.0",
+    "jasmine": "^3.1.0",
+    "protractor-pretty-html-reporter": "0.0.16",
+    "random-name": "^0.1.2",
+    "username-generator": "^1.0.3"
   }
 }
