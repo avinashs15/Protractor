@@ -2,18 +2,18 @@ var PrettyReporter = require('protractor-pretty-html-reporter').Reporter;
 var path = require('path');
 
 //Results added to a directory under test/Execution Results. Open report.html
-var prettyReporter = new PrettyReporter({    
-    path: path.join(__dirname, 'Execution Results'),
-    screenshotOnPassed: false,
-    highlightSuspectLine : true,
-    title :"WBSAutomation"
+var prettyReporter = new PrettyReporter({
+	path: path.join(__dirname, 'Execution Results'),
+	screenshotOnPassed: false,
+	highlightSuspectLine : true,
+	title :"WBSAutomation"
 });
 
 
 exports.config = {
-  	framework: 'jasmine',
+	framework: 'jasmine',
 	//seleniumAddress: 'http://localhost:4444/wd/hub', (Optional)
-	specs: ['./Specs/*.js'],  // Relative path to the spec file
+	specs: ['./Specs/*.js'], // Relative path to the spec file
 
 	//browser options
 	capabilities: {
@@ -29,8 +29,7 @@ exports.config = {
 			//'args': ['disable-infobars']
 		}
 	},
-    
-    	onPrepare: function() {
+	onPrepare: function() {
 		//launches the browser and maximuises it before test specs is run
 		browser.driver.manage().window().maximize();		
 		jasmine.getEnv().addReporter(prettyReporter);
