@@ -1,7 +1,6 @@
 var PrettyReporter = require('protractor-pretty-html-reporter').Reporter;
 var path = require('path');
 
-//Results added to a directory under test/Execution Results. Open report.html
 var prettyReporter = new PrettyReporter({
 	path: path.join(__dirname, 'Execution Results'),
 	screenshotOnPassed: false,
@@ -9,14 +8,30 @@ var prettyReporter = new PrettyReporter({
 	title :"WBSAutomation"
 });
 
-
 exports.config = {
-	framework: 'jasmine',
-	//seleniumAddress: 'http://localhost:4444/wd/hub', (Optional)
-	specs: ['./Specs/*.js'], // Relative path to the spec file
+	baseUrl:"http://www.way2automation.com/angularjs-protractor/registeration/#/login", 
+	framework: 'jasmine2',
+	allScriptsTimeout: 720000,
+	getPageTimeout: 90000,
+	vheNumber : 585555,
+	Inschrijfnummer : 000,	
+		
+	jasmineNodeOpts: {
+		showColors: true,
+		defaultTimeoutInterval: 720000,
+		isVerbose: true
+	},
+		
+	params: {
+			username: 'beheerder',			
+			password :'X84cp9u37J#e', //funk
+			invalidPassword: 'test12345',
+			messages: {
+				loginFailure : 'De gebruikersnaam en het wachtwoord zijn niet bekend bij ons'
+			}
+	},
 
-	//browser options
-	capabilities: {
+	capabilities: {		
 		'browserName': 'chrome',
 		'time-zone': 'Amsterdam',
 		'marionette': true,		
@@ -25,12 +40,14 @@ exports.config = {
 			'credentials_enable_service': false
 		},
 		'chromeOptions': {
-			'args': ['disable-infobars']
-			//'args': ['disable-infobars']
+			'args': ['disable-infobars']//, "--headless", "--window-size=1027x768"]
 		}
 	},
-	onPrepare: function() {
-		//launches the browser and maximuises it before test specs is run
+	suites: {
+		specs : "specs/test*.js"		
+	},
+
+    onPrepare: function() {
 		browser.driver.manage().window().maximize();		
 		jasmine.getEnv().addReporter(prettyReporter);
 	}

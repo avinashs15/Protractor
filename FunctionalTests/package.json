@@ -14,10 +14,16 @@
     "appendjson": "^0.1.2",
     "csv-write-stream": "^2.0.0",
     "fs": "0.0.1-security",
+    "geckodriver": "^1.11.0",
     "generate-password": "^1.4.0",
     "jasmine": "^3.1.0",
+    "protractor": "^5.3.1",
     "protractor-pretty-html-reporter": "0.0.16",
     "random-name": "^0.1.2",
-    "username-generator": "^1.0.3"
+    "username-generator": "^1.0.3",
+    "webdriver-manager": "^12.0.6"
+  },
+  "devDependencies": {
+    "protractor-cucumber-framework": "^6.0.0"
   }
 }
