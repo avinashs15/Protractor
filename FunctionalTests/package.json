@@ -11,6 +11,7 @@
   "author": "a.ranganatha",
   "contributors": [],
   "dependencies": {
+    "@types/jasmine": "^2.8.8",
     "appendjson": "^0.1.2",
     "csv-write-stream": "^2.0.0",
     "fs": "0.0.1-security",

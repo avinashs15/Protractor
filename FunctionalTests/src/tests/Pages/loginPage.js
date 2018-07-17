@@ -24,6 +24,12 @@ var loginPage = function() {
 		});
 	};
 	
+	this.checkPasswordExists = function(callback){
+		this.txtPassword.isPresent().then(function(status){
+		    callback(status);
+		});
+	};
+	
 	this.launchURL = function (url){
 		browser.get(url);
 	};

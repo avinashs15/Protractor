@@ -44,7 +44,7 @@ exports.config = {
 		}
 	},
 	suites: {
-		specs : "specs/test*.js"		
+		specs : "specs/*.js"		
 	},
 
     onPrepare: function() {
