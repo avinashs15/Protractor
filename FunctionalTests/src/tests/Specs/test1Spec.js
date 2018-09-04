@@ -1,3 +1,5 @@
+/* global expect */
+
 describe('Protractor test App without Page object model', function() {
 	it('should have a title', function() {
 		browser.get('http://www.way2automation.com/angularjs-protractor/registeration/#/login');
