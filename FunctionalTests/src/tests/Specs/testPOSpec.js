@@ -1,3 +1,5 @@
+/* global expect */
+
 var loginPage = require('../Pages/loginPage.js');
 var data =  require('../Data/environmentData');
 var homePage = require('../Pages/homePage.js');
